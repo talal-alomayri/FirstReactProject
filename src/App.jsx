@@ -21,29 +21,29 @@ function App() {
           <div className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 ml-4 mr-4
                              md:ml-10 md:mr-10 lg:ml-30 lg:mr-30">
             <Cards Htext="DevLens" Parh="Quickly inspect page layouts and visualize element boundaries."
-            Icons="src/Icons/logo-devlens.svg"/>
+            Icons="/Icons/logo-devlens.svg"/>
              <Cards Htext="StyleSpy" Parh="Instantly analyze and copy CSS from any webpage element."
-            Icons="src/Icons/logo-style-spy.svg"/>
+            Icons="/Icons/logo-style-spy.svg"/>
              <Cards Htext="SpeedBoost" Parh="Optimizes browser resource usage to accelerate page loading."
-            Icons="src/Icons/logo-speed-boost.svg"/>
+            Icons="/Icons/logo-speed-boost.svg"/>
              <Cards Htext="JSONWizard" Parh="Formats, validates, and prettifies JSON responses in-browser."
-            Icons="src/Icons/logo-json-wizard.svg"/>
+            Icons="/Icons/logo-json-wizard.svg"/>
              <Cards Htext="TabMaster Pro" Parh="Organizes browser tabs into groups and sessions."
-            Icons="src/Icons/logo-tab-master-pro.svg"/>
+            Icons="/Icons/logo-tab-master-pro.svg"/>
              <Cards Htext="ViewportBuddy" Parh="Simulates various screen resolutions directly within the browser."
-            Icons="src/Icons/logo-viewport-buddy.svg"/>
+            Icons="/Icons/logo-viewport-buddy.svg"/>
              <Cards Htext="Markup Notes" Parh="Enables annotion and notes dirctly onto webpage for collaborative debugging."
-            Icons="src/Icons/logo-markup-notes.svg"/>
+            Icons="/Icons/logo-markup-notes.svg"/>
              <Cards Htext="GridGuides" Parh="Overlay customizable grids and alignment guides on any webpage."
-            Icons="src/Icons/logo-grid-guides.svg"/>
+            Icons="/Icons/logo-grid-guides.svg"/>
              <Cards Htext="Palette Picker" Parh="Instantly extracts color palettes from any webpage."
-            Icons="src/Icons/logo-palette-picker.svg"/>
+            Icons="/Icons/logo-palette-picker.svg"/>
              <Cards Htext="LinkChecker" Parh="Scans and higlights broken links on any page."
-            Icons="src/Icons/logo-link-checker.svg"/>
+            Icons="/Icons/logo-link-checker.svg"/>
              <Cards Htext="DOM Snapshot" Parh="Capture and export DOM structures quickly."
-            Icons="src/Icons/logo-dom-snapshot.svg"/>
+            Icons="/Icons/logo-dom-snapshot.svg"/>
              <Cards Htext="ConsolePlus" Parh="Enhanced developer console with advanced filtering and logging."
-            Icons="src/Icons/logo-console-plus.svg"/>
+            Icons="/Icons/logo-console-plus.svg"/>
           </div>
             {/* just a space down the page ;) */}
       <div className="text-indigo-950 mt-2">0</div>

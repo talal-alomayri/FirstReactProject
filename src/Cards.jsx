@@ -9,7 +9,7 @@ export default function Cards({Htext, Parh, Icons}){
                 <div className="flex ">
              <div><img src={Icons} class=" w-15 h-15 mt-5 ml-5 md:w-20"/></div>
              <div><h1>{Htext}</h1>
-             <p>{Parh}</p></div>
+             <p className="mr-5">{Parh}</p></div>
             </div>
                 <div className="flex justify-between ">
                  <button className="text-sm text-Ptext border border-gray-600 rounded-2xl hover:bg-gray-500 pl-3 pr-3 pb-1 mt-8 ml-5 mb-4">Remove</button>
