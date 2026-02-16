@@ -2,9 +2,13 @@ import {Switch} from '@headlessui/react'
 
 
 
-export default function Cards({Htext, Parh, Icons}){
-    return(
-    
+export default function Cards({Htext = "no heder", Parh , Icons}){
+       if (Htext == "no heder"){
+            return (
+              <div></div>
+            )
+       }
+            return(
               <div className="card">
                 <div className="flex ">
              <div><img src={Icons} class=" w-15 h-15 mt-5 ml-5 md:w-20"/></div>

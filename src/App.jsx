@@ -2,11 +2,12 @@ import {Switch} from '@headlessui/react'
 import Cards from "./Cards"
 import ButtonsOnAbov from './ButtonsOnAbov'
 import TopWebPage from './TopWebPage'
+import CardArr from './CardInfo.json'
+
 
 
 
 function App() {
-  
 
   return (
     // background-color
@@ -17,34 +18,27 @@ function App() {
             <TopWebPage/>
            {/* The Extensions List line */}
             <ButtonsOnAbov/>
-         {/* all cards from Cards Component */}
-          <div className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 ml-4 mr-4
+         {/* cards design and calling Info from CardInfo.json */}
+         <div className="grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 ml-4 mr-4
                              md:ml-10 md:mr-10 lg:ml-30 lg:mr-30">
-            <Cards Htext="DevLens" Parh="Quickly inspect page layouts and visualize element boundaries."
-            Icons="/Icons/logo-devlens.svg"/>
-             <Cards Htext="StyleSpy" Parh="Instantly analyze and copy CSS from any webpage element."
-            Icons="/Icons/logo-style-spy.svg"/>
-             <Cards Htext="SpeedBoost" Parh="Optimizes browser resource usage to accelerate page loading."
-            Icons="/Icons/logo-speed-boost.svg"/>
-             <Cards Htext="JSONWizard" Parh="Formats, validates, and prettifies JSON responses in-browser."
-            Icons="/Icons/logo-json-wizard.svg"/>
-             <Cards Htext="TabMaster Pro" Parh="Organizes browser tabs into groups and sessions."
-            Icons="/Icons/logo-tab-master-pro.svg"/>
-             <Cards Htext="ViewportBuddy" Parh="Simulates various screen resolutions directly within the browser."
-            Icons="/Icons/logo-viewport-buddy.svg"/>
-             <Cards Htext="Markup Notes" Parh="Enables annotion and notes dirctly onto webpage for collaborative debugging."
-            Icons="/Icons/logo-markup-notes.svg"/>
-             <Cards Htext="GridGuides" Parh="Overlay customizable grids and alignment guides on any webpage."
-            Icons="/Icons/logo-grid-guides.svg"/>
-             <Cards Htext="Palette Picker" Parh="Instantly extracts color palettes from any webpage."
-            Icons="/Icons/logo-palette-picker.svg"/>
-             <Cards Htext="LinkChecker" Parh="Scans and higlights broken links on any page."
-            Icons="/Icons/logo-link-checker.svg"/>
-             <Cards Htext="DOM Snapshot" Parh="Capture and export DOM structures quickly."
-            Icons="/Icons/logo-dom-snapshot.svg"/>
-             <Cards Htext="ConsolePlus" Parh="Enhanced developer console with advanced filtering and logging."
-            Icons="/Icons/logo-console-plus.svg"/>
-          </div>
+              {CardArr.map(CardInfo =>(
+                 <div className="card">
+                <div className="flex ">
+             <div><img src={CardInfo.Icons} class=" w-15 h-15 mt-5 ml-5 md:w-20"/></div>
+             <div><h1>{CardInfo.Name}</h1>
+             <p className="mr-5">{CardInfo.Desc}</p></div>
+            </div>
+                <div className="flex justify-between ">
+                 <button className="text-sm text-Ptext border border-gray-600 rounded-2xl hover:bg-gray-500 pl-3 pr-3 pb-1 mt-8 ml-5 mb-4">Remove</button>
+              <Switch
+                className=" mt-8 mr-6 group relative flex h-6 w-10 cursor-pointer rounded-full bg-white/10 hover:bg-gray-400 p-1 ease-in-out focus:not-data-focus:outline-none data-checked:bg-orange-600 data-focus:outline data-focus:outline-white">  
+                <span aria-hidden="true"
+                className="pointer-events-none inline-block size-4 translate-x-0 rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out group-data-checked:translate-x-4"/>
+              </Switch>
+               </div>
+              </div>
+              ))}
+        </div>
             {/* just a space down the page ;) */}
       <div className="text-indigo-950 mt-2">0</div>
    </div>

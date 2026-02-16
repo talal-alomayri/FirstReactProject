@@ -1,0 +1,74 @@
+[
+{
+"id":"1",
+"Name":"DevLens",
+"Desc":"Quickly inspect page layouts and visualize element boundaries.",
+"Icons":"/Icons/logo-devlens.svg"
+},
+{
+"id":"2",
+"Name":"StyleSpy",
+"Desc":"Instantly analyze and copy CSS from any webpage element.",
+"Icons":"/Icons/logo-style-spy.svg"
+},
+{
+"id":"3",
+"Name":"SpeedBoost",
+"Desc":"Optimizes browser resource usage to accelerate page loading.",
+"Icons":"/Icons/logo-speed-boost.svg"
+},
+{
+"id":"4",
+"Name":"JSONWizard",
+"Desc":"Formats, validates, and prettifies JSON responses in-browser.",
+"Icons":"/Icons/logo-json-wizard.svg"
+},
+{
+"id":"5",
+"Name":"TabMaster Pro",
+"Desc":"Organizes browser tabs into groups and sessions.",
+"Icons":"/Icons/logo-tab-master-pro.svg"
+},
+{
+"id":"6",
+"Name":"ViewportBuddy",
+"Desc":"Simulates various screen resolutions directly within the browser.",
+"Icons":"/Icons/logo-viewport-buddy.svg"
+},
+{
+"id":"7",
+"Name":"Markup Notes",
+"Desc":"Enables annotion and notes dirctly onto webpage for collaborative debugging.",
+"Icons":"/Icons/logo-markup-notes.svg"
+},
+{
+"id":"8",
+"Name":"GridGuides",
+"Desc":"Overlay customizable grids and alignment guides on any webpage.",
+"Icons":"/Icons/logo-grid-guides.svg"
+},
+{
+"id":"9",
+"Name":"Palette Picker",
+"Desc":"Instantly extracts color palettes from any webpage.",
+"Icons":"/Icons/logo-palette-picker.svg"
+},
+{
+"id":"10",
+"Name":"LinkChecker",
+"Desc":"Scans and higlights broken links on any page.",
+"Icons":"/Icons/logo-link-checker.svg"
+},
+{
+"id":"11",
+"Name":"DOM Snapshot",
+"Desc":"Capture and export DOM structures quickly.",
+"Icons":"/Icons/logo-dom-snapshot.svg"
+},
+{
+"id":"12",
+"Name":"ConsolPlus",
+"Desc":"Enhanced developer console with advanced filtering and logging.",
+"Icons":"/Icons/logo-console-plus.svg"
+}
+]
